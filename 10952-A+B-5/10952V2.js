@@ -3,8 +3,7 @@ var input = fs.readFileSync('/Users/chiyeon/ST_BAEKJOON/test.txt').toString().sp
 //var input = fs.readFileSync('/dev/stdin').toString().split('\n');
 var numArray = new Array;
 
-for(var i = 0; i<input.length; i++){
+for(var i = 0; i<input.length-1; i++){
   numArray.push(input[i].split(' '));
+  console.log(parseInt(numArray[i][0])+parseInt(numArray[i][1]));
 }
-
-console.log(numArray);

@@ -5,6 +5,8 @@ var numArray = new Array;
 
 for(var i = 0; i<input.length; i++){
   numArray.push(input[i].split(' '));
+  var sum =  parseInt(numArray[i][0])+parseInt(numArray[i][1]);
+  if(!(sum === 0)){
+    console.log(sum);
+  }
 }
-
-console.log(numArray);
